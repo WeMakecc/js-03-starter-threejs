@@ -1,0 +1,15 @@
+html {
+  background-color: #fefefe;
+}
+
+body {
+  color: #454545;
+  margin: 0;
+  background-size: 'cover';
+}
+
+h1,
+p {
+  margin: 1rem 1rem;
+  font-family: 'Roboto', sans-serif;
+}
