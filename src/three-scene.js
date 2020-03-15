@@ -1,6 +1,10 @@
 import Stats from 'stats.js'
 import { getGPUTier } from 'detect-gpu'
 import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+
+// see here: https://threejs.org/docs/#manual/en/introduction/Import-via-modules
+console.log({ OrbitControls })
 
 let sceneInstance = null
 
@@ -9,6 +13,7 @@ class MainScene {
   stats = null
   camera = null
   scene = null
+  constrols = null
 
   mesh = null
 
@@ -35,6 +40,7 @@ class MainScene {
     this.renderer.setPixelRatio(window.devicePixelRatio)
     this.renderer.setSize(window.innerWidth, window.innerHeight)
     document.body.appendChild(this.renderer.domElement)
+    this.controls = new OrbitControls(this.camera, this.renderer.domElement)
 
     const gpu = getGPUTier({ glContext: this.renderer.getContext() })
     console.log('💻 gpu:', {
