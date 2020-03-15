@@ -1,7 +1,7 @@
 import Stats from 'stats.js'
 import { getGPUTier } from 'detect-gpu'
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // see here: https://threejs.org/docs/#manual/en/introduction/Import-via-modules
 console.log({ OrbitControls })
