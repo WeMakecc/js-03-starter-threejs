@@ -4,6 +4,8 @@ import cannon from 'cannon'
 window.CANNON = cannon
 const { CannonPhysics } = require('three/examples/jsm/physics/CannonPhysics')
 
+// example copy pasted from https://github.com/mrdoob/three.js/blob/master/examples/physics_cannon_instancing.html
+
 let camera, scene, renderer
 let physics, position
 
